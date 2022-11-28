@@ -1,5 +1,8 @@
 import { Component } from "@angular/core";
-import { Title, Meta } from "@angular/platform-browser";
+import {
+  Title,
+  Meta,
+} from "@angular/platform-browser";
 
 @Component({
   selector: "app-home",
@@ -14,12 +17,18 @@ export class Home {
   rawev7g: string = " ";
   rawjrjx: string = " ";
 
-  constructor(private title: Title, private meta: Meta) {
-    this.title.setTitle("Apex Collision Center");
+  constructor(
+    private title: Title,
+    private meta: Meta
+  ) {
+    this.title.setTitle(
+      "Fancy Balloons by Julie"
+    );
     this.meta.addTags([
       {
         property: "og:title",
-        content: "Apex Collision Center",
+        content:
+          "Fancy Balloons by Julie",
       },
     ]);
   }

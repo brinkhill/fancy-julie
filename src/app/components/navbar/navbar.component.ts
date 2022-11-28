@@ -10,12 +10,6 @@ import {
 })
 export class Navbar {
   @Input()
-  image_src: string =
-    "assets/images/conecept-logo-01.png";
-  @Input()
-  image_src1: string =
-    "assets/images/conecept-logo-01.png";
-  @Input()
   image_alt: string = "top-logo";
   @Input()
   image_alt1: string = "footer-logo";
@@ -23,7 +17,7 @@ export class Navbar {
   text: string = "Follow us";
   @Input()
   PrimaryBtn: string =
-    "Call us: (434) 229-4864";
+    "Request A Quote";
   @Input()
   PrimaryBtn1: string = "Get started";
 

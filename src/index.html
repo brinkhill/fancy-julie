@@ -2,11 +2,23 @@
 
 <html lang="en">
   <head>
-    <title>Apex Collision Center</title>
+    <title>
+      Fancy Balloons by Julie
+    </title>
     <base href="/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      name="theme-color"
+      content="#F9DEEC"
+    />
     <style data-tag="reset-style-sheet">
       html {
         line-height: 1.15;
@@ -80,9 +92,12 @@
         scroll-behavior: smooth;
       }
     </style>
-    <style data-tag="default-style-sheet">
+    <style
+      data-tag="default-style-sheet"
+    >
       html {
-        font-family: franklin-gothic-atf, sans-serif;
+        font-family: "Bitter", serif;
+
         font-size: 16px;
       }
 
@@ -93,45 +108,73 @@
         text-transform: none;
         letter-spacing: normal;
         line-height: 1.1;
-        color: var(--dl-color-grays-dark100);
-        background-color: var(--dl-color-grays-white100);
+        color: #f7f4f2ff;
+        background-color: #f9deec;
       }
     </style>
-    <link rel="stylesheet" href="https://use.typekit.net/bga7pkl.css" />
-    <link rel="icon" href="/assets/images/favi.png" />
+    <!-- this is a link to the font -->
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap"
-      data-tag="font"
+      href="https://use.typekit.net/bga7pkl.css"
+    />
+    <link
+      rel="icon"
+      href="/assets/logos/favi.png"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:wght@700&display=swap"
+      rel="stylesheet"
     />
     <style>
       ::placeholder {
         color: #63667066;
       }
     </style>
+    <script>
+      function lockScroll() {
+        document.body.classList.toggle(
+          "lock-scroll"
+        );
+      }
+    </script>
   </head>
   <body>
     <app-root></app-root>
-    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
     <script>
       window.onload = () => {
         const runAllScripts = () => {};
 
-        const listenForUrlChanges = () => {
-          let url = location.href;
-          document.body.addEventListener(
-            "click",
-            () => {
-              requestAnimationFrame(() => {
-                if (url !== location.href) {
-                  runAllScripts();
-                  url = location.href;
-                }
-              });
-            },
-            true
-          );
-        };
+        const listenForUrlChanges =
+          () => {
+            let url = location.href;
+            document.body.addEventListener(
+              "click",
+              () => {
+                requestAnimationFrame(
+                  () => {
+                    if (
+                      url !==
+                      location.href
+                    ) {
+                      runAllScripts();
+                      url =
+                        location.href;
+                    }
+                  }
+                );
+              },
+              true
+            );
+          };
 
         runAllScripts();
       };

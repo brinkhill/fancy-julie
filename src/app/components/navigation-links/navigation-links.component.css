@@ -35,26 +35,18 @@
   }
   .navigation-links-text1 {
     margin-left: 0;
-    margin-bottom: var(
-      --dl-space-space-unit
-    );
+    margin-bottom: 27px;
   }
   .navigation-links-text2 {
     margin-left: 0;
-    margin-bottom: var(
-      --dl-space-space-unit
-    );
+    margin-bottom: 27px;
   }
   .navigation-links-text3 {
     margin-left: 0;
-    margin-bottom: var(
-      --dl-space-space-unit
-    );
+    margin-bottom: 27px;
   }
   .navigation-links-text4 {
     margin-left: 0;
-    margin-bottom: var(
-      --dl-space-space-unit
-    );
+    margin-bottom: 27px;
   }
 }

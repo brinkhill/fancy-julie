@@ -2,6 +2,11 @@
   display: contents;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 .under-about {
   align-items: center;
   text-align: center;
@@ -27,23 +32,22 @@
   width: 100%;
   display: flex;
   position: relative;
-  min-height: 100vh;
+  min-height: 60vh;
   overflow-x: hidden;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: var(
-    --dl-color-backgrounds-gray
-  );
+  background-color: #f9deec;
 }
 .home-main {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(/assets/photos/building.jpg);
-  min-height: 100vh;
+  background-image: url(/assets/photos/balloons.jpg);
+  min-height: 50vh;
   background-size: cover;
+  background-position: center;
 }
 
 .text-box {
@@ -707,6 +711,8 @@
   }
   .home-main {
     background-position: center top;
+    width: 100%;
+    border-radius: 0%;
   }
 
   .home-text {
